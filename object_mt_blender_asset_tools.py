@@ -1,7 +1,7 @@
 import bpy
 
-class OBJECT_MT_AssetTools(bpy.types.Menu):
-    bl_label = "Asset Tools"
+class OBJECT_MT_BlenderAssetTools(bpy.types.Menu):
+    bl_label = "Blender Asset Tools"
     bl_idname = "OBJECT_MT_AssetTools"
 
     @classmethod
@@ -31,12 +31,12 @@ class OBJECT_MT_AssetTools(bpy.types.Menu):
                 text = "Set asset value")
 
 def draw_menu(self, context):
-    self.layout.menu(OBJECT_MT_AssetTools.bl_idname)
+    self.layout.menu(OBJECT_MT_BlenderAssetTools.bl_idname)
 
 def register():
-    bpy.utils.register_class(OBJECT_MT_AssetTools)
+    bpy.utils.register_class(OBJECT_MT_BlenderAssetTools)
     bpy.types.VIEW3D_MT_object_asset.append(draw_menu)
 
 def unregister():
     bpy.types.VIEW3D_MT_object_asset.remove(draw_menu)
-    bpy.utils.unregister_class(OBJECT_MT_AssetTools)
+    bpy.utils.unregister_class(OBJECT_MT_BlenderAssetTools)

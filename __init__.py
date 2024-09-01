@@ -5,7 +5,7 @@ import sys
 import importlib
 
 bl_info = {
-    "name": "Asset Tools",
+    "name": "Blender Asset Tools",
     "author": "Thorben Baerentson",
     "description": "A collection of tools that makes managing assets in blender easier and more productive.",
     "blender": (4, 00, 0),
@@ -13,9 +13,8 @@ bl_info = {
 }
 
 modulesNames = [
-    'add_property_to_selected',
     'tag_assets_based_on_parent_names',
-    'object_mt_asset_tools',
+    'object_mt_blender_asset_tools.py',
     'set_asset_value',
 ]
 
