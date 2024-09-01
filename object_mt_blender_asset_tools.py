@@ -14,12 +14,7 @@ class OBJECT_MT_BlenderAssetTools(bpy.types.Menu):
         if context.selected_objects is None:
             print("No objects selected. Noting to do.")
             return
-
-        if context.selected_objects is not None:
-            layout.operator(
-                "object.add_property_to_selected", 
-                text = "Add property to selected")
-        
+       
         if context.selected_objects is not None:
             layout.operator(
                 "object.tag_assets_based_on_parent_names", 

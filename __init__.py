@@ -14,7 +14,7 @@ bl_info = {
 
 modulesNames = [
     'tag_assets_based_on_parent_names',
-    'object_mt_blender_asset_tools.py',
+    'object_mt_blender_asset_tools',
     'set_asset_value',
 ]
 
