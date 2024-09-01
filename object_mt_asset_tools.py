@@ -4,8 +4,16 @@ class OBJECT_MT_AssetTools(bpy.types.Menu):
     bl_label = "Asset Tools"
     bl_idname = "OBJECT_MT_AssetTools"
 
+    @classmethod
+    def poll(cls, context):
+        return context.selected_objects is not None
+
     def draw(self, context):
         layout = self.layout
+
+        if context.selected_objects is None:
+            print("No objects selected. Noting to do.")
+            return
 
         if context.selected_objects is not None:
             layout.operator(
