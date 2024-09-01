@@ -10,7 +10,7 @@
 This is a collection of operators that make managing assets in blender more convenient. 
 
 # Operators
-All operators a put under Object :arrow_right: Asset :arrow_right: Asset Tools under the 'Layout' tab. Keep in mind, that each operator requires at least one object to be selected.
+All operators a put under 'Object :arrow_right: Asset :arrow_right: Asset Tools' under the 'Layout' tab. Keep in mind, that each operator requires at least one object to be selected.
 
 ## Add property to selected
 Takes a property name and value and adds this property value on all selected objects. Properties can be added to the object or the data tab. Property values will be exported alongside the object if blender exports .glft or .glb files. Game engines like [Bevy](https://bevyengine.org/) import these property values when loading .gltfs (see [Load gltf extras](https://bevyengine.org/examples/3d-rendering/load-gltf-extras)). This enables us to pump data from Blender to a game engine. 
