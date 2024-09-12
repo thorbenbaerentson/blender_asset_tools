@@ -16,6 +16,8 @@ modulesNames = [
     'tag_assets_based_on_parent_names',
     'object_mt_blender_asset_tools',
     'set_asset_value',
+    'tag_selected_assets',
+    'untag_selected_assets',
 ]
 
 modulesFullNames = {}

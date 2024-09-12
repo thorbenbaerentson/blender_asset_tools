@@ -15,15 +15,21 @@ class OBJECT_MT_BlenderAssetTools(bpy.types.Menu):
             print("No objects selected. Noting to do.")
             return
        
-        if context.selected_objects is not None:
-            layout.operator(
-                "object.tag_assets_based_on_parent_names", 
-                text = "Tag assets based on parent names")
+        layout.operator(
+            "object.tag_assets_based_on_parent_names", 
+            text = "Tag assets based on parent names")
+        
+        layout.operator(
+            "object.set_asset_value", 
+            text = "Set asset value")
             
-        if context.selected_objects is not None:
-            layout.operator(
-                "object.set_asset_value", 
-                text = "Set asset value")
+        layout.operator(
+            "object.tag_selected_assets", 
+            text = "Tag selected assets")
+        
+        layout.operator(
+            "object.untag_selected_assets", 
+            text = "Untag selected assets")
 
 def draw_menu(self, context):
     self.layout.menu(OBJECT_MT_BlenderAssetTools.bl_idname)
